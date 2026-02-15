@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>力学仿真 | PMDome 粉末冶金知识库</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="8" fill="currentColor"/>
+                    <circle cx="12" cy="14" r="3" fill="currentColor"/>
+                    <circle cx="28" cy="14" r="2" fill="currentColor"/>
+                    <circle cx="14" cy="28" r="2.5" fill="currentColor"/>
+                    <circle cx="26" cy="26" r="2" fill="currentColor"/>
+                </svg>
+                <span class="logo-text">PMDome</span>
+            </div>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">首页</a>
+                <a href="compaction.html" class="nav-link">压制方式</a>
+                <a href="materials.html" class="nav-link">相关材料</a>
+                <a href="metallography.html" class="nav-link">金相分析</a>
+                <a href="simulation.html" class="nav-link active">力学仿真</a>
+                <a href="resources.html" class="nav-link">学习资料</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-hero" style="background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);">
+            <div class="container">
+                <h1 class="page-title">力学仿真</h1>
+                <p class="page-subtitle">粉末冶金工艺过程数值模拟与有限元分析</p>
+            </div>
+        </section>
+
+        <section class="page-content">
+            <div class="container">
+                <div class="content-nav">
+                    <a href="#overview" class="content-nav-link">概述</a>
+                    <a href="#compaction-sim" class="content-nav-link">压制仿真</a>
+                    <a href="#sintering-sim" class="content-nav-link">烧结仿真</a>
+                    <a href="#fea" class="content-nav-link">有限元分析</a>
+                    <a href="#software" class="content-nav-link">软件工具</a>
+                </div>
+
+                <article id="overview" class="content-section">
+                    <h2>力学仿真概述</h2>
+                    <p>粉末冶金工艺涉及复杂的塑性变形、热传导和扩散过程，传统试错法开发周期长、成本高。数值模拟技术可以在计算机上预测工艺参数对产品质量的影响，优化工艺设计，显著缩短研发周期。目前仿真技术已广泛应用于压制成型、烧结过程、产品性能预测等各个环节。</p>
+                    
+                    <div class="info-box">
+                        <h4>仿真技术应用领域</h4>
+                        <ul>
+                            <li><strong>压制过程仿真</strong>：优化模具设计、预测密度分布</li>
+                            <li><strong>烧结仿真</strong>：预测烧结变形、优化烧结工艺</li>
+                            <li><strong>产品性能仿真</strong>：强度分析、疲劳寿命预测</li>
+                            <li><strong>工艺优化</strong>：减少实验次数、降低研发成本</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="compaction-sim" class="content-section">
+                    <h2>压制过程仿真</h2>
+                    <p>压制仿真主要分析粉末在模具中的流动、致密化过程和应力应变分布，对于复杂零件的模具设计和工艺参数优化具有重要价值。</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <div class="method-icon">📊</div>
+                            <h3>离散元法(DEM)</h3>
+                            <p>将粉末视为大量独立颗粒，通过追踪颗粒间的相互作用模拟粉末流动。适合分析装粉和早期压制阶段。</p>
+                            <div class="method-features">
+                                <span>颗粒尺度</span>
+                                <span>流动分析</td>
+                                <span>装粉优化</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">🔢</div>
+                            <h3>有限元法(FEM)</h3>
+                            <p>将粉末视为连续介质，使用弹塑性本构模型描述其力学行为。适合分析整体变形和密度分布。</p>
+                            <div class="method-features">
+                                <span>连续介质</td>
+                                <span>应力分析</td>
+                                <span>模具设计</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">🔄</div>
+                            <h3>多尺度方法</h3>
+                            <p>结合DEM和FEM的优势，宏观使用FEM，局部使用DEM处理接触问题。代表发展方向。</p>
+                            <div class="method-features">
+                                <span>跨尺度</td>
+                                <span>高精度</td>
+                                <span>联合仿真</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">🎯</div>
+                            <h3>关键问题</h3>
+                            <p>本构模型、摩擦条件、弹性后效等问题的准确描述仍是挑战。</p>
+                            <div class="method-features">
+                                <span>本构模型</span>
+                                <span>摩擦</span>
+                                <span>后效</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-table">
+                        <h3>压制仿真主要研究内容</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>研究内容</th>
+                                    <th>目的</th>
+                                    <th>关键指标</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>密度分布预测</td>
+                                    <td>避免缺陷、优化密度均匀性</td>
+                                    <td>相对密度分布</td>
+                                </tr>
+                                <tr>
+                                    <td>应力分析</td>
+                                    <td>预测裂纹、脱模阻力</td>
+                                    <td>主应力、剪切应力</td>
+                                </tr>
+                                <tr>
+                                    <td>模具优化</td>
+                                    <td>改善流动、减少磨损</td>
+                                    <td>压力分布、填充率</td>
+                                </tr>
+                                <tr>
+                                    <td>工艺参数优化</td>
+                                    <td>确定最佳压制参数</td>
+                                    <td>压力曲线、保压时间</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <article id="sintering-sim" class="content-section">
+                    <h2>烧结过程仿真</h2>
+                    <p>烧结是粉末冶金的核心工艺，涉及高温下的扩散、蠕变和致密化过程。烧结仿真可以预测烧结变形、优化烧结工艺参数。</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card highlight-card">
+                            <div class="method-icon">🌡️</div>
+                            <h3>热传导分析</h3>
+                            <p>模拟烧结炉内的温度分布，优化加热工艺和装炉方式。</p>
+                            <div class="method-features">
+                                <span>温度场</span>
+                                <span>热梯度</span>
+                                <span>加热工艺</span>
+                            </div>
+                        </div>
+                        <div class="method-card highlight-card">
+                            <div class="method-icon">📉</div>
+                            <h3>致密化模拟</h3>
+                            <p>预测烧结过程中的密度变化和收缩行为，评估烧结程度。</p>
+                            <div class="method-features">
+                                <span>密度变化</span>
+                                <span>收缩</span>
+                                <span>致密化速率</span>
+                            </div>
+                        </div>
+                        <div class="method-card highlight-card">
+                            <div class="method-icon">🔀</div>
+                            <h3>变形预测</h3>
+                            <p>分析烧结过程中的翘曲、变形，优化产品设计。</p>
+                            <div class="method-features">
+                                <span>翘曲</span>
+                                <span>变形</span>
+                                <span>尺寸控制</span>
+                            </div>
+                        </div>
+                        <div class="method-card highlight-card">
+                            <div class="method-icon">🧬</div>
+                            <h3>微观组织演化</h3>
+                            <p>模拟烧结过程中晶粒长大、孔隙演变等微观结构变化。</p>
+                            <div class="method-features">
+                                <span>晶粒长大</span>
+                                <span>孔隙演化</span>
+                                <span>机理研究</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>烧结仿真本构模型</h4>
+                        <ul>
+                            <li><strong>唯象模型</strong>：基于宏观实验数据建立的经验模型</li>
+                            <li><strong>机理模型</strong>：基于烧结机理的理论模型，如粒子松弛模型</li>
+                            <li><strong>混合模型</strong>：结合唯象和机理模型的优点</li>
+                            <li><strong>机器学习模型</strong>：利用数据驱动方法建立预测模型</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="fea" class="content-section">
+                    <h2>有限元分析应用</h2>
+                    <p>有限元法(FEA)是工程领域最广泛使用的数值分析方法，在粉末冶金中用于产品结构分析和工艺优化。</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <div class="method-icon">💪</div>
+                            <h3>结构强度分析</h3>
+                            <p>分析粉末冶金零件在载荷作用下的应力应变分布，评估强度和刚度。</p>
+                            <div class="method-features">
+                                <span>静强度</span>
+                                <span>刚度</td>
+                                <span>安全系数</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">🔄</div>
+                            <h3>疲劳分析</h3>
+                            <p>预测零件在循环载荷下的疲劳寿命，为产品设计提供依据。</p>
+                            <div class="method-features">
+                                <span>S-N曲线</td>
+                                <span>疲劳寿命</td>
+                                <span>损伤累积</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">⚡</div>
+                            <h3>冲击分析</h3>
+                            <p>模拟零件在冲击载荷下的响应，评估抗冲击性能。</p>
+                            <div class="method-features">
+                                <span>动载荷</td>
+                                <span>应力波</td>
+                                <span>吸能</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">🌡️</div>
+                            <h3>热应力分析</h3>
+                            <p>分析温度变化引起的热应力，评估热疲劳性能。</p>
+                            <div class="method-features">
+                                <span>热载荷</td>
+                                <span>热应力</td>
+                                <span>热疲劳</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-table">
+                        <h3>粉末冶金产品FEA要点</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>分析类型</th>
+                                    <th>模型要点</th>
+                                    <th>注意事项</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>弹性分析</td>
+                                    <td>使用多孔材料弹性常数</td>
+                                    <td>考虑孔隙影响</td>
+                                </tr>
+                                <tr>
+                                    <td>弹塑性分析</td>
+                                    <td>输入屈服强度和硬化曲线</td>
+                                    <td>密度依赖性</td>
+                                </tr>
+                                <tr>
+                                    <td>疲劳分析</td>
+                                    <td>使用疲劳极限图</td>
+                                    <td>表面质量影响</td>
+                                </tr>
+                                <tr>
+                                    <td>断裂分析</td>
+                                    <td>考虑孔洞萌生与生长</td>
+                                    <td>损伤模型选择</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <article id="software" class="content-section">
+                    <h2>仿真软件工具</h2>
+                    <p>根据不同的仿真需求，可以选择合适的软件工具进行粉末冶金工艺模拟。</p>
+                    
+                    <div class="cards-grid">
+                        <div class="info-card">
+                            <h3>通用有限元软件</h3>
+                            <p>ANSYS、ABAQUS、NASTRAN等，可进行结构分析、热分析、流体分析等，支持粉末冶金产品的性能仿真。</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>专业粉末冶金软件</h3>
+                            <p>Simufact、Deform等，专门针对金属成型工艺开发，支持压制、锻造等工艺仿真。</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>离散元软件</h3>
+                            <p>EDEM、Rocky等，用于粉末颗粒尺度的流动和堆积行为分析。</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>多物理场仿真</h3>
+                            <p>COMSOL等，支持多物理场耦合分析，适合复杂工艺过程仿真。</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>仿真流程建议</h4>
+                        <ul>
+                            <li><strong>前处理</strong>：建立几何模型、划分网格、设置材料参数</li>
+                            <li><strong>求解设置</strong>：定义边界条件、载荷工况、求解器参数</li>
+                            <li><strong>计算求解</strong>：运行仿真、监控收敛、解决计算问题</li>
+                            <li><strong>后处理</strong>：提取结果、数据可视化、结果验证</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <div class="page-navigation">
+                    <a href="resources.html" class="page-nav-btn next">
+                        <span class="nav-label">下一页</span>
+                        <span class="nav-title">学习资料</span>
+                        <span class="nav-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="20" cy="20" r="8" fill="currentColor"/>
+                            <circle cx="12" cy="14" r="3" fill="currentColor"/>
+                            <circle cx="28" cy="14" r="2" fill="currentColor"/>
+                            <circle cx="14" cy="28" r="2.5" fill="currentColor"/>
+                            <circle cx="26" cy="26" r="2" fill="currentColor"/>
+                        </svg>
+                        <span class="logo-text">PMDome</span>
+                    </div>
+                    <p>粉末冶金知识库 - 致力于传播粉末冶金技术知识</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="compaction.html">压制方式</a></li>
+                        <li><a href="materials.html">相关材料</a></li>
+                        <li><a href="metallography.html">金相分析</a></li>
+                        <li><a href="simulation.html">力学仿真</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>学习资源</h4>
+                    <ul>
+                        <li><a href="resources.html">推荐书籍</a></li>
+                        <li><a href="resources.html">在线课程</a></li>
+                        <li><a href="resources.html">标准规范</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 PMDome. 粉末冶金知识库. 创建用于学习和研究目的.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="../index.html" class="mobile-nav-link">首页</a>
+        <a href="compaction.html" class="mobile-nav-link">压制方式</a>
+        <a href="materials.html" class="mobile-nav-link">相关材料</a>
+        <a href="metallography.html" class="mobile-nav-link">金相分析</a>
+        <a href="simulation.html" class="mobile-nav-link active">力学仿真</a>
+        <a href="resources.html" class="mobile-nav-link">学习资料</a>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

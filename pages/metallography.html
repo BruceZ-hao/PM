@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金相分析 | PMDome 粉末冶金知识库</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="8" fill="currentColor"/>
+                    <circle cx="12" cy="14" r="3" fill="currentColor"/>
+                    <circle cx="28" cy="14" r="2" fill="currentColor"/>
+                    <circle cx="14" cy="28" r="2.5" fill="currentColor"/>
+                    <circle cx="26" cy="26" r="2" fill="currentColor"/>
+                </svg>
+                <span class="logo-text">PMDome</span>
+            </div>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">首页</a>
+                <a href="compaction.html" class="nav-link">压制方式</a>
+                <a href="materials.html" class="nav-link">相关材料</a>
+                <a href="metallography.html" class="nav-link active">金相分析</a>
+                <a href="simulation.html" class="nav-link">力学仿真</a>
+                <a href="resources.html" class="nav-link">学习资料</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-hero" style="background: linear-gradient(135deg, #059669 0%, #047857 100%);">
+            <div class="container">
+                <h1 class="page-title">金相分析</h1>
+                <p class="page-subtitle">粉末冶金材料显微组织研究与分析</p>
+            </div>
+        </section>
+
+        <section class="page-content">
+            <div class="container">
+                <div class="content-nav">
+                    <a href="#overview" class="content-nav-link">概述</a>
+                    <a href="#preparation" class="content-nav-link">样品制备</a>
+                    <a href="#observation" class="content-nav-link">组织观察</a>
+                    <a href="#porosity" class="content-nav-link">孔隙分析</a>
+                    <a href="#atlas" class="content-nav-link">组织图谱</a>
+                </div>
+
+                <article id="overview" class="content-section">
+                    <h2>金相分析概述</h2>
+                    <p>金相分析是研究金属材料微观组织的重要方法，对于粉末冶金材料而言，由于其独特的多孔结构，金相分析具有特殊的重要性。通过金相观察可以分析粉末冶金制品的孔隙率、孔径分布、晶粒度、烧结程度等关键指标，为工艺优化和质量控制提供依据。</p>
+                    
+                    <div class="info-box">
+                        <h4>金相分析主要内容</h4>
+                        <ul>
+                            <li><strong>显微组织观察</strong>：分析相组成、晶粒形貌</li>
+                            <li><strong>孔隙分析</strong>：定量测定孔隙率、孔径分布</li>
+                            <li><strong>缺陷检测</strong>：识别裂纹、夹杂等缺陷</li>
+                            <li><strong>界面研究</strong>：分析粘结相与硬质相的结合</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="preparation" class="content-section">
+                    <h2>金相样品制备</h2>
+                    <p>粉末冶金材料的多孔特性使其金相样品制备具有特殊性，需要特别注意防止孔隙被污物填充或变形。</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <div class="method-icon">✂️</div>
+                            <h3>取样与切割</h3>
+                            <p>使用低速精密切割机取样，避免高温对组织的影响。对于多孔材料可使用树脂镶嵌保护。</p>
+                            <div class="method-features">
+                                <span>精密切割</span>
+                                <span>树脂镶嵌</span>
+                                <span>低温</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">🔧</div>
+                            <h3>磨抛步骤</h3>
+                            <p>从粗砂纸到细砂纸逐级磨制，最后使用抛光膏进行抛光。抛光时间需适当延长以去除表面变形层。</p>
+                            <div class="method-features">
+                                <span>分级磨制</span>
+                                <span>精细抛光</span>
+                                <span>无变形</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-steps">
+                        <h3>标准制备流程</h3>
+                        <ol>
+                            <li><strong>镶嵌</strong>：对多孔样品进行热镶或冷镶，防止孔隙污染</li>
+                            <li><strong>粗磨</strong>：使用180-320目砂纸去除切割痕迹</li>
+                            <li><strong>精磨</strong>：使用400-1200目砂纸逐级精磨</li>
+                            <li><strong>抛光</strong>：使用W3.5-W1金刚石抛光膏进行抛光</li>
+                            <li><strong>侵蚀</strong>：选择合适的侵蚀剂显示显微组织</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article id="observation" class="content-section">
+                    <h2>显微组织观察</h2>
+                    <p>根据观察目的和样品特性选择合适的显微镜和分析方法。</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <div class="method-icon">🔬</div>
+                            <h3>光学显微镜</h3>
+                            <p>常规金相观察，放大倍数50-1000倍，适用于孔隙率测定、晶粒度评级等。</p>
+                            <div class="method-features">
+                                <span>常规</td>
+                                <span>定量分析</span>
+                                <span>成本低</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">⚡</div>
+                            <h3>扫描电镜(SEM)</h3>
+                            <p>高分辨率观察，可进行断口分析、成分分析(EDS)，放大倍数可达10万倍。</p>
+                            <div class="method-features">
+                                <span>高分辨</span>
+                                <span>成分分析</td>
+                                <span>断口分析</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">🌟</div>
+                            <h3>透射电镜(TEM)</h3>
+                            <p>观察纳米级精细结构、位错、析出相等，适合研究烧结机理和强化机制。</p>
+                            <div class="method-features">
+                                <span>超高分辨</span>
+                                <span>晶体结构</span>
+                                <span>缺陷分析</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">🖥️</div>
+                            <h3>电子背散射(EBSD)</h3>
+                            <p>分析晶粒取向、晶界类型、织构等，适合研究再结晶和晶粒长大过程。</p>
+                            <div class="method-features">
+                                <span>晶粒取向</span>
+                                <span>晶界分析</span>
+                                <span>织构</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="porosity" class="content-section">
+                    <h2>孔隙分析</h2>
+                    <p>孔隙是粉末冶金材料的固有特征，孔隙率、孔径分布和孔形貌是评价粉末冶金制品性能的重要指标。</p>
+                    
+                    <div class="comparison-table">
+                        <h3>孔隙分析方法</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>方法</th>
+                                    <th>原理</th>
+                                    <th>优点</th>
+                                    <th>局限性</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>图像分析法</td>
+                                    <td>显微图像处理</td>
+                                    <td>直观、可定量</td>
+                                    <td>需要标定</td>
+                                </tr>
+                                <tr>
+                                    <td>阿基米德法</td>
+                                    <td>密度测量</td>
+                                    <td>简单快速</td>
+                                    <td>粗略估算</td>
+                                </tr>
+                                <tr>
+                                    <td>压汞法</td>
+                                    <td>汞侵入孔隙</td>
+                                    <td>孔径分布</td>
+                                    <td>破坏样品</td>
+                                </tr>
+                                <tr>
+                                    <td>X射线CT</td>
+                                    <td>三维重建</td>
+                                    <td>三维定量</td>
+                                    <td>设备昂贵</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>孔隙率计算公式</h4>
+                        <ul>
+                            <li><strong>理论密度法</strong>：孔隙率 = (ρ理-ρ实) / ρ理 × 100%</li>
+                            <li><strong>图像分析法</strong>：孔隙率 = 孔隙面积 / 视场面积 × 100%</li>
+                            <li><strong>阿基米德法</strong>：孔隙率 = (m湿-m干) / (m湿-m沉) × 100%</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="atlas" class="content-section">
+                    <h2>典型组织图谱</h2>
+                    <p>不同粉末冶金材料具有典型的显微组织特征，是质量控制和失效分析的重要依据。</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card highlight-card">
+                            <div class="method-icon">🔩</div>
+                            <h3>铁基材料</h3>
+                            <p>典型组织为铁素体+珠光体，孔隙呈不规则形状均匀分布。随着密度提高，孔隙减少，强度升高。</p>
+                            <div class="method-features">
+                                <span>铁素体</span>
+                                <span>珠光体</span>
+                                <span>多孔结构</span>
+                            </div>
+                        </div>
+                        <div class="method-card highlight-card">
+                            <div class="method-icon">🪙</div>
+                            <h3>铜基材料</h3>
+                            <p>纯铜组织为等轴晶粒，铜合金可见枝晶偏析。烧结铜基材料孔隙沿晶界分布。</p>
+                            <div class="method-features">
+                                <span>等轴晶</span>
+                                <span>枝晶</span>
+                                <span>晶界孔隙</span>
+                            </div>
+                        </div>
+                        <div class="method-card highlight-card">
+                            <div class="method-icon">💎</div>
+                            <h3>硬质合金</h3>
+                            <p>WC相呈多边形，Co粘结相分布均匀。晶粒度、Co分布直接影响材料性能。</p>
+                            <div class="method-features">
+                                <span>WC晶粒</span>
+                                <span>Co粘结相</span>
+                                <span>均匀分布</span>
+                            </div>
+                        </div>
+                        <div class="method-card highlight-card">
+                            <div class="method-icon">🎯</div>
+                            <h3>钨基合金</h3>
+                            <p>钨颗粒呈球形或近球形，Ni-Fe粘结相包裹钨颗粒，形成典型的两相组织。</p>
+                            <div class="method-features">
+                                <span>球形钨粒</span>
+                                <span>粘结相</span>
+                                <span>两相组织</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards-grid">
+                        <div class="info-card">
+                            <h3>烧结程度判定</h3>
+                            <p>通过观察孔隙形貌和晶粒长大程度判断烧结进程。烧结充分时，孔隙趋于球化、尺寸减小。</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>过烧特征</h3>
+                            <p>过烧会导致晶粒异常长大、孔隙粗化、材料性能下降。金相观察可清晰识别过烧组织。</p>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="page-navigation">
+                    <a href="simulation.html" class="page-nav-btn next">
+                        <span class="nav-label">下一页</span>
+                        <span class="nav-title">力学仿真</span>
+                        <span class="nav-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="20" cy="20" r="8" fill="currentColor"/>
+                            <circle cx="12" cy="14" r="3" fill="currentColor"/>
+                            <circle cx="28" cy="14" r="2" fill="currentColor"/>
+                            <circle cx="14" cy="28" r="2.5" fill="currentColor"/>
+                            <circle cx="26" cy="26" r="2" fill="currentColor"/>
+                        </svg>
+                        <span class="logo-text">PMDome</span>
+                    </div>
+                    <p>粉末冶金知识库 - 致力于传播粉末冶金技术知识</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="compaction.html">压制方式</a></li>
+                        <li><a href="materials.html">相关材料</a></li>
+                        <li><a href="metallography.html">金相分析</a></li>
+                        <li><a href="simulation.html">力学仿真</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>学习资源</h4>
+                    <ul>
+                        <li><a href="resources.html">推荐书籍</a></li>
+                        <li><a href="resources.html">在线课程</a></li>
+                        <li><a href="resources.html">标准规范</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 PMDome. 粉末冶金知识库. 创建用于学习和研究目的.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="../index.html" class="mobile-nav-link">首页</a>
+        <a href="compaction.html" class="mobile-nav-link">压制方式</a>
+        <a href="materials.html" class="mobile-nav-link">相关材料</a>
+        <a href="metallography.html" class="mobile-nav-link active">金相分析</a>
+        <a href="simulation.html" class="mobile-nav-link">力学仿真</a>
+        <a href="resources.html" class="mobile-nav-link">学习资料</a>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

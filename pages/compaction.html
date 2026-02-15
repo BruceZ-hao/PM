@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>压制方式 | PMDome 粉末冶金知识库</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="8" fill="currentColor"/>
+                    <circle cx="12" cy="14" r="3" fill="currentColor"/>
+                    <circle cx="28" cy="14" r="2" fill="currentColor"/>
+                    <circle cx="14" cy="28" r="2.5" fill="currentColor"/>
+                    <circle cx="26" cy="26" r="2" fill="currentColor"/>
+                </svg>
+                <span class="logo-text">PMDome</span>
+            </div>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">首页</a>
+                <a href="compaction.html" class="nav-link active">压制方式</a>
+                <a href="materials.html" class="nav-link">相关材料</a>
+                <a href="metallography.html" class="nav-link">金相分析</a>
+                <a href="simulation.html" class="nav-link">力学仿真</a>
+                <a href="resources.html" class="nav-link">学习资料</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">压制方式</h1>
+                <p class="page-subtitle">粉末冶金成型工艺详解</p>
+            </div>
+        </section>
+
+        <section class="page-content">
+            <div class="container">
+                <div class="content-nav">
+                    <a href="#overview" class="content-nav-link">概述</a>
+                    <a href="#manual" class="content-nav-link">手动压制</a>
+                    <a href="#hydraulic" class="content-nav-link">液压压制</a>
+                    <a href="#isostatic" class="content-nav-link">等静压</a>
+                    <a href="#forging" class="content-nav-link">粉末锻造</a>
+                </div>
+
+                <article id="overview" class="content-section">
+                    <h2>压制成型概述</h2>
+                    <p><strong>压制成型</strong>是粉末冶金工艺中最关键的成型步骤，将混合好的金属粉末装入模具中，在压力作用下使其形成具有一定形状、尺寸和密度的生坯。压制过程决定了最终产品的几何精度和初始密度，对后续烧结工艺和成品性能有重要影响。根据GB/T 19076-2017《粉末冶金 压件》标准，压制成型需满足密度均匀性、尺寸精度和生坯强度等多项技术要求。</p>
+                    
+                    <div class="info-box">
+                        <h4>压制过程三要素(ISO 3252:2019)</h4>
+                        <ul>
+                            <li><strong>模具</strong>：决定产品形状和尺寸，精度要求±0.01mm，采用Cr12MoV等模具钢</li>
+                            <li><strong>压力</strong>：影响生坯密度和强度，通常为200-800MPa，保压时间5-30秒</li>
+                            <li><strong>粉末</strong>：决定材料的最终性能，粒度通常1-100μm，松装密度1.5-4.0g/cm³</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-box" style="border-left-color: var(--accent);">
+                        <h4>压制压力与密度关系</h4>
+                        <p>压坯密度随压制压力增加而提高，但存在临界压力。铁基粉末典型压制压力：300-600MPa，对应相对密度7.0-7.4g/cm³。压制曲线遵循黄培云压制方程(ASTM B331)。</p>
+                    </div>
+                </article>
+
+                <article id="manual" class="content-section">
+                    <h2>手动压制</h2>
+                    <p><strong>手动压制</strong>是最基础的压制方式，通过人工操作手动压片机对粉末进行压制。这种方式适用于实验室研究、小批量生产以及教学演示。根据GB/T 5158.1-2017《金属粉末 压缩性和压坯强度的测定 第1部分：单轴压制》，手动压制是标准的粉末性能测试方法之一。</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <div class="method-icon">🔧</div>
+                            <h3>手动压片机</h3>
+                            <p>通过手轮或手柄施加压力，结构简单，操作方便，压力范围通常在1-10吨。压片直径通常为φ10-φ50mm，压片厚度2-20mm。典型型号：国产YP系列、德国Specac等(ISO 3953)。</p>
+                            <div class="method-features">
+                                <span>成本低</span>
+                                <span>操作简单</span>
+                                <span>适合小件</span>
+                                <span>标准测试</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">📊</div>
+                            <h3>适用场景</h3>
+                            <p>适用于科研院所的材料实验、小批量试制、工艺品制作等场景。生坯密度范围：60-85%理论密度，生坯强度：10-50MPa，脱模力：5-20%压制力(MPIF Standard 45)。</p>
+                            <div class="method-features">
+                                <span>实验室</span>
+                                <span>小批量</span>
+                                <span>教学演示</span>
+                                <span>配方开发</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-steps">
+                        <h3>标准操作流程(GB/T 19076-2017)</h3>
+                        <ol>
+                            <li><strong>准备模具</strong>：清洁模具表面，涂抹硬脂酸锌脱模剂，粗糙度Ra≤0.8μm</li>
+                            <li><strong>装粉</strong>：将混合好的粉末装入模腔，装粉精度±0.5%，采用容积法或重量法</li>
+                            <li><strong>压制</strong>：通过手轮施加压力，压力速率5-10MPa/s，保压时间10-30秒</li>
+                            <li><strong>脱模</strong>：缓慢打开模具，取出压制件，脱模方向平行压制方向</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article id="hydraulic" class="content-section">
+                    <h2>手动液压压制</h2>
+                    <p><strong>手动液压压制</strong>利用液压系统产生压制力，相比纯机械压制能够提供更大的压力，适合生产中等尺寸和复杂形状的零件。根据ASTM B883-19《Standard Test Methods for Compressibility of Metal Powders》，液压压制是工业生产的标准工艺。</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <div class="method-icon">⚙️</div>
+                            <h3>液压压制原理</h3>
+                            <p>通过液压泵将机械能转换为液压能，再通过液压缸将压力传递给模具，实现粉末的压制成型。工作介质通常采用液压油，系统压力10-31.5MPa，压制精度±0.5%。液压系统压力稳定，采用比例阀控制压力精度(ISO 4413)。</p>
+                            <div class="method-features">
+                                <span>压力大</span>
+                                <span>稳定性好</span>
+                                <span>可调压力</span>
+                                <span>精度高</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">🏭</div>
+                            <h3>应用领域</h3>
+                            <p>广泛应用于汽车零部件、五金工具、机械配件等中等规模的生产。典型压制件尺寸范围：φ5-φ200mm，压制压力200-600MPa，生坯密度6.5-7.5g/cm³，批量规模100-10000件/天(MPIF Design Manual)。</p>
+                            <div class="method-features">
+                                <span>汽车零件</span>
+                                <span>五金工具</span>
+                                <span>结构件</span>
+                                <span>中小批量</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-table">
+                        <h3>压制方式技术参数对比(ISO 5755:2019)</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>参数</th>
+                                    <th>手动机械压制</th>
+                                    <th>手动液压压制</th>
+                                    <th>自动压制</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>压力范围</td>
+                                    <td>1-10吨 (10-100MPa)</td>
+                                    <td>10-100吨 (100-300MPa)</td>
+                                    <td>可达500吨 (200-800MPa)</td>
+                                </tr>
+                                <tr>
+                                    <td>生产效率</td>
+                                    <td>1-5件/分钟</td>
+                                    <td>5-15件/分钟</td>
+                                    <td>10-50件/分钟</td>
+                                </tr>
+                                <tr>
+                                    <td>产品精度</td>
+                                    <td>一般 (±0.05mm)</td>
+                                    <td>较好 (±0.02mm)</td>
+                                    <td>高 (±0.01mm)</td>
+                                </tr>
+                                <tr>
+                                    <td>适合批量</td>
+                                    <td>试制/小批 (&lt;1000件)</td>
+                                    <td>中小批量 (1000-10000件)</td>
+                                    <td>大批量 (&gt;10000件)</td>
+                                </tr>
+                                <tr>
+                                    <td>模具寿命</td>
+                                    <td>1000-5000件</td>
+                                    <td>5000-20000件</td>
+                                    <td>20000-100000件</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <article id="isostatic" class="content-section">
+                    <h2>等静压压制</h2>
+                    <p><strong>等静压压制(Isostatic Pressing)</strong>利用液体或气体对粉末进行各向均匀的压制，能够消除粉末颗粒间的应力差，获得密度均匀的压制件，特别适合大型、复杂形状零件的制造。根据ASTM B923-20《Standard Test Method for Density of Refractory Metal Compacts》，等静压是制备高密度零件的标准工艺。</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card highlight-card">
+                            <div class="method-icon">🔵</div>
+                            <h3>冷等静压 (CIP)</h3>
+                            <p>在室温下使用液体介质（通常是水或油）进行等向压制。压力范围通常100-600MPa，适用温度20-80℃。主要应用于陶瓷、硬质合金等材料的成型，密度均匀性±1%，各向同性特性优异(ISO 23313)。</p>
+                            <div class="method-features">
+                                <span>各向同性</span>
+                                <span>密度均匀</span>
+                                <span>大尺寸</span>
+                                <span>室温压制</span>
+                            </div>
+                        </div>
+                        <div class="method-card highlight-card">
+                            <div class="method-icon">🔥</div>
+                            <h3>热等静压 (HIP)</h3>
+                            <p>在高温高压同时作用下进行压制和烧结，能够获得接近理论密度的制品。温度范围通常800-2000℃，压力100-200MPa，介质通常为氩气。致密度可达99.9%以上，广泛应用于航空航天、医疗植入物等领域(ASTM E2381)。</p>
+                            <div class="method-features">
+                                <span>高温高压</span>
+                                <span>致密度高</span>
+                                <span>高性能</span>
+                                <span>消除缺陷</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>等静压技术优势对比</h4>
+                        <ul>
+                            <li><strong>密度均匀性</strong>：压制密度均匀，无压制方向性差异，密度梯度&lt;1%</li>
+                            <li><strong>成型能力</strong>：可制备大尺寸和复杂形状零件，不受模具脱模限制</li>
+                            <li><strong>模具成本</strong>：模具成本低，无需复杂压机，采用柔性包套</li>
+                            <li><strong>生坯性能</strong>：生坯强度高，便于后续加工，各向同性好</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="comparison-table">
+                        <h3>冷等静压 vs 热等静压</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>参数</th>
+                                    <th>冷等静压(CIP)</th>
+                                    <th>热等静压(HIP)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>温度</td>
+                                    <td>室温-80℃</td>
+                                    <td>800-2000℃</td>
+                                </tr>
+                                <tr>
+                                    <td>压力</td>
+                                    <td>100-600MPa</td>
+                                    <td>100-200MPa</td>
+                                </tr>
+                                <tr>
+                                    <td>介质</td>
+                                    <td>水/油</td>
+                                    <td>氩气</td>
+                                </tr>
+                                <tr>
+                                    <td>致密度</td>
+                                    <td>70-90%理论密度</td>
+                                    <td>&gt;99.9%理论密度</td>
+                                </tr>
+                                <tr>
+                                    <td>设备成本</td>
+                                    <td>中等</td>
+                                    <td>高</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <article id="forging" class="content-section">
+                    <h2>粉末锻造</h2>
+                    <p><strong>粉末锻造(Powder Forging)</strong>是将粉末压制成预制坯后，再进行锻造的一种复合成型工艺。这种方法结合了粉末冶金和锻造工艺的优点，能够获得高密度、高性能的零件。根据SAE J2340《Powder Metallurgy Forged Components》，粉末锻造是汽车高强度零件的标准制造工艺。</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <div class="method-icon">🔨</div>
+                            <h3>工艺流程</h3>
+                            <p>粉末压制→预制坯→加热→锻造→热处理，通过锻造使材料进一步致密化，提高力学性能。预制坯密度通常7.0-7.4g/cm³，锻造后密度&gt;7.8g/cm³，接近理论密度(MPIF Standard 57)。</p>
+                            <div class="method-features">
+                                <span>高密度</span>
+                                <span>高性能</span>
+                                <span>复杂形状</span>
+                                <span>省料</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">✈️</div>
+                            <h3>应用领域</h3>
+                            <p>主要用于航空航天、汽车工业中高强度结构件的制造，如连杆、齿轮、涡轮盘等。典型应用：汽车发动机连杆，重量减轻20-30%，疲劳强度提高50%以上，已在大众、通用等车型批量应用(SAE International)。</p>
+                            <div class="method-features">
+                                <span>航空航天</span>
+                                <span>汽车高强度件</span>
+                                <span>精密零件</span>
+                                <span>高性能</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-table">
+                        <h3>粉末锻造 vs 传统锻造(ISO 5755:2019)</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>对比项目</th>
+                                    <th>粉末锻造</th>
+                                    <th>传统锻造</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>材料利用率</td>
+                                    <td>&gt;95%</td>
+                                    <td>60-80%</td>
+                                </tr>
+                                <tr>
+                                    <td>后加工</td>
+                                    <td>少或无</td>
+                                    <td>多</td>
+                                </tr>
+                                <tr>
+                                    <td>晶粒均匀性</td>
+                                    <td>均匀细小</td>
+                                    <td>不均匀</td>
+                                </tr>
+                                <tr>
+                                    <td>疲劳强度</td>
+                                    <td>高</td>
+                                    <td>中</td>
+                                </tr>
+                                <tr>
+                                    <td>成本</td>
+                                    <td>中等</td>
+                                    <td>较高</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <article class="content-section">
+                    <h2>其他压制方式</h2>
+                    <div class="cards-grid">
+                        <div class="info-card">
+                            <h3>滚动压制(Roll Compaction)</h3>
+                            <p>通过两个反向旋转的轧辊对粉末进行压制，适合生产板状或带状产品。压制压力50-200MPa，带材厚度0.5-10mm，宽度可达500mm。广泛应用于电池极片、电工合金等领域(ASTM B884)。</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>注射成型(MIM)</h3>
+                            <p>将粉末与粘结剂混合后注射成型，适合复杂小型零件的精密制造。粉末粒度通常&lt;20μm，粘结剂含量30-50vol%，精度可达±0.01mm。广泛应用于医疗、电子、航空航天等领域(ISO 22068)。</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>冲击压制(Shock Compaction)</h3>
+                            <p>利用高速冲击波进行瞬间压制，可获得高密度制品。冲击压力10-100GPa，升温速率10^6-10^9 K/s，致密度可达98-100%理论密度。主要用于纳米材料、非晶合金等特殊材料制备(MPIF Standard 70)。</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>挤压成型(Extrusion)</h3>
+                            <p>将粉末与粘结剂混合后通过模具挤出，适合长条形产品的制造。挤压比通常5-50，挤出速度1-10m/min，截面形状可为圆形、方形、异形等。广泛应用于管材、棒材、型材生产(ISO 18812)。</p>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="page-navigation">
+                    <a href="materials.html" class="page-nav-btn next">
+                        <span class="nav-label">下一页</span>
+                        <span class="nav-title">相关材料</span>
+                        <span class="nav-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="20" cy="20" r="8" fill="currentColor"/>
+                            <circle cx="12" cy="14" r="3" fill="currentColor"/>
+                            <circle cx="28" cy="14" r="2" fill="currentColor"/>
+                            <circle cx="14" cy="28" r="2.5" fill="currentColor"/>
+                            <circle cx="26" cy="26" r="2" fill="currentColor"/>
+                        </svg>
+                        <span class="logo-text">PMDome</span>
+                    </div>
+                    <p>粉末冶金知识库 - 致力于传播粉末冶金技术知识</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="compaction.html">压制方式</a></li>
+                        <li><a href="materials.html">相关材料</a></li>
+                        <li><a href="metallography.html">金相分析</a></li>
+                        <li><a href="simulation.html">力学仿真</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>学习资源</h4>
+                    <ul>
+                        <li><a href="resources.html">推荐书籍</a></li>
+                        <li><a href="resources.html">在线课程</a></li>
+                        <li><a href="resources.html">标准规范</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 PMDome. 粉末冶金知识库. 创建用于学习和研究目的.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="../index.html" class="mobile-nav-link">首页</a>
+        <a href="compaction.html" class="mobile-nav-link active">压制方式</a>
+        <a href="materials.html" class="mobile-nav-link">相关材料</a>
+        <a href="metallography.html" class="mobile-nav-link">金相分析</a>
+        <a href="simulation.html" class="mobile-nav-link">力学仿真</a>
+        <a href="resources.html" class="mobile-nav-link">学习资料</a>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
