@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粉末冶金知识库 | PMDome</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="8" fill="currentColor"/>
+                    <circle cx="12" cy="14" r="3" fill="currentColor"/>
+                    <circle cx="28" cy="14" r="2" fill="currentColor"/>
+                    <circle cx="14" cy="28" r="2.5" fill="currentColor"/>
+                    <circle cx="26" cy="26" r="2" fill="currentColor"/>
+                </svg>
+                <span class="logo-text">PMDome</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link active">首页</a>
+                <a href="pages/compaction.html" class="nav-link">压制方式</a>
+                <a href="pages/materials.html" class="nav-link">相关材料</a>
+                <a href="pages/metallography.html" class="nav-link">金相分析</a>
+                <a href="pages/simulation.html" class="nav-link">力学仿真</a>
+                <a href="pages/resources.html" class="nav-link">学习资料</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">粉末冶金<br><span class="highlight">知识库</span></h1>
+                    <p class="hero-subtitle">探索粉末冶金的奥秘，从压制工艺到金相分析，从材料科学到力学仿真</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">1900s</span>
+                            <span class="stat-label">起源年代</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">90%+</span>
+                            <span class="stat-label">材料利用率</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">500</span>
+                           + <span class="stat-label">应用领域</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">什么是粉末冶金？</h2>
+                    <p class="section-subtitle">Powder Metallurgy - 先进制造技术的基石</p>
+                </div>
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <p>粉末冶金是一种通过金属粉末的压制和烧结来制造金属材料和零部件的工艺技术。它不同于传统的铸造成形方法，而是利用金属粉末的流动性和可压缩性，在模具中成型后经过高温烧结，使粉末颗粒之间形成冶金结合。</p>
+                        <p>粉末冶金技术起源于19世纪末，20世纪得到迅速发展。如今已成为现代工业中不可或缺的先进制造技术，广泛应用于汽车、航空航天、电子、医疗、能源等各个领域。</p>
+                        <p>粉末冶金的核心优势在于能够生产传统工艺难以制造的复杂形状零件，材料利用率高达95%以上，且可以实现多种材料的复合，为新材料开发提供了广阔空间。</p>
+                    </div>
+                    <div class="intro-features">
+                        <div class="intro-card">
+                            <div class="intro-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <h3>工艺原理</h3>
+                            <p>通过压制金属粉末成型并在保护气氛下烧结，生产金属材料或制品的工艺技术。</p>
+                        </div>
+                        <div class="intro-card">
+                            <div class="intro-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="3"/>
+                                    <path d="M12 1v6m0 6v10M4.22 4.22l4.24 4.24m7.08 7.08l4.24 4.24M1 12h6m6 0h10M4.22 19.78l4.24-4.24m7.08-7.08l4.24-4.24"/>
+                                </svg>
+                            </div>
+                            <h3>核心优势</h3>
+                            <p>材料利用率高达95%以上，可实现复杂形状零件的一次成型，减少后续加工工序。</p>
+                        </div>
+                        <div class="intro-card">
+                            <div class="intro-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                                </svg>
+                            </div>
+                            <h3>主要流程</h3>
+                            <p>粉末制备 → 混合 → 压制成型 → 烧结 → 后处理，最终获得高性能金属制品。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="history">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">发展历史</h2>
+                    <p class="section-subtitle">从古代到现代的技术演进</p>
+                </div>
+                <div class="history-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">1800s</div>
+                        <div class="timeline-content">
+                            <h4>早期发展</h4>
+                            <p>1870年，英国科学家W. K. Johnson发明了粉末冶金技术，用于制造钨丝</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1900s</div>
+                        <div class="timeline-content">
+                            <h4>工业化应用</h4>
+                            <p>20世纪初，粉末冶金开始工业化应用，主要用于制造电灯灯丝和硬质合金</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1950s</div>
+                        <div class="timeline-content">
+                            <h4>快速发展</h4>
+                            <p>二战后，粉末冶金技术快速发展，应用领域扩大到汽车、航空航天等行业</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1980s</div>
+                        <div class="timeline-content">
+                            <h4>技术突破</h4>
+                            <p>等静压、注射成形等先进工艺出现，粉末冶金进入精密制造时代</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2000s</div>
+                        <div class="timeline-content">
+                            <h4>智能制造</h4>
+                            <p>计算机仿真技术应用，粉末冶金与数字化制造相结合</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">探索内容</h2>
+                    <p class="section-subtitle">全面了解粉末冶金各领域知识</p>
+                </div>
+                <div class="features-grid">
+                    <a href="pages/compaction.html" class="feature-card">
+                        <div class="feature-icon feature-1">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 20h16M4 20V10m0 10l4-6m12 6V10m0 10l-4-6M12 4v6"/>
+                            </svg>
+                        </div>
+                        <h3>压制方式</h3>
+                        <p>手动压制、液压压制、等静压、粉末锻造等多种成型工艺介绍，详细讲解各工艺原理和应用场景</p>
+                        <span class="feature-link">了解更多 →</span>
+                    </a>
+                    <a href="pages/materials.html" class="feature-card">
+                        <div class="feature-icon feature-2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </div>
+                        <h3>相关材料</h3>
+                        <p>铁基、铜基、钨基材料，硬质合金及复合材料详解，包括材料性能、应用领域和最新发展</p>
+                        <span class="feature-link">了解更多 →</span>
+                    </a>
+                    <a href="pages/metallography.html" class="feature-card">
+                        <div class="feature-icon feature-3">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <circle cx="12" cy="12" r="6"/>
+                                <circle cx="12" cy="12" r="2"/>
+                            </svg>
+                        </div>
+                        <h3>金相分析</h3>
+                        <p>样品制备、显微组织观察、孔隙分析与典型组织图谱，掌握粉末冶金材料的微观结构分析方法</p>
+                        <span class="feature-link">了解更多 →</span>
+                    </a>
+                    <a href="pages/simulation.html" class="feature-card">
+                        <div class="feature-icon feature-4">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <path d="M8 21h8m-4-4v4"/>
+                                <path d="M6 8l4 3-4 3m6 0h4"/>
+                            </svg>
+                        </div>
+                        <h3>力学仿真</h3>
+                        <p>压制、烧结过程仿真与有限元分析方法，利用数值模拟优化工艺参数</p>
+                        <span class="feature-link">了解更多 →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">技术优势</h2>
+                    <p class="section-subtitle">粉末冶金的独特优势</p>
+                </div>
+                <div class="advantages-grid">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                        </div>
+                        <h3>材料利用率高</h3>
+                        <p>可达95%以上，远高于传统切削加工的60-80%，显著节约原材料成本</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                        </div>
+                        <h3>复杂形状成型</h3>
+                        <p>可一次成型复杂形状零件，避免多道加工工序，提高生产效率</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                        </div>
+                        <h3>材料性能优异</h3>
+                        <p>可制造传统工艺难以获得的合金材料，如高合金工具钢、金属间化合物等</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                        </div>
+                        <h3>生产效率高</h3>
+                        <p>适合大批量生产，自动化程度高，生产周期短，质量稳定</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="applications">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">应用领域</h2>
+                    <p class="section-subtitle">粉末冶金技术已广泛应用于各行各业</p>
+                </div>
+                <div class="app-grid">
+                    <div class="app-item">
+                        <span class="app-icon">⚙️</span>
+                        <span>汽车零部件</span>
+                    </div>
+                    <div class="app-item">
+                        <span class="app-icon">✈️</span>
+                        <span>航空航天</span>
+                    </div>
+                    <div class="app-item">
+                        <span class="app-icon">🔧</span>
+                        <span>机械制造</span>
+                    </div>
+                    <div class="app-item">
+                        <span class="app-icon">💎</span>
+                        <span>硬质合金</span>
+                    </div>
+                    <div class="app-item">
+                        <span class="app-icon">🔋</span>
+                        <span>新能源</span>
+                    </div>
+                    <div class="app-item">
+                        <span class="app-icon">🏥</span>
+                        <span>医疗器械</span>
+                    </div>
+                    <div class="app-item">
+                        <span class="app-icon">🔩</span>
+                        <span>五金工具</span>
+                    </div>
+                    <div class="app-item">
+                        <span class="app-icon">🎯</span>
+                        <span>精密零件</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">生产工艺流程</h2>
+                    <p class="section-subtitle">从粉末到成品的完整制造过程</p>
+                </div>
+                <div class="process-flow">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h4>粉末制备</h4>
+                            <p>通过机械法、物理法或化学法生产金属粉末，控制粒度和纯度</p>
+                        </div>
+                    </div>
+                    <div class="process-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14m-7-7l7 7-7 7"/>
+                        </svg>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h4>粉末混合</h4>
+                            <p>按配方比例混合不同粉末，添加润滑剂和粘结剂</p>
+                        </div>
+                    </div>
+                    <div class="process-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14m-7-7l7 7-7 7"/>
+                        </svg>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h4>压制成型</h4>
+                            <p>将粉末装入模具并施加压力成型，获得生坯</p>
+                        </div>
+                    </div>
+                    <div class="process-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14m-7-7l7 7-7 7"/>
+                        </svg>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h4>烧结处理</h4>
+                            <p>在保护气氛下进行高温烧结，使粉末颗粒结合</p>
+                        </div>
+                    </div>
+                    <div class="process-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14m-7-7l7 7-7 7"/>
+                        </svg>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">05</div>
+                        <div class="step-content">
+                            <h4>后处理</h4>
+                            <p>精整、整形、热处理等最终处理，获得成品</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-studies">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">应用案例</h2>
+                    <p class="section-subtitle">粉末冶金技术的成功应用</p>
+                </div>
+                <div class="case-grid">
+                    <div class="case-card">
+                        <div class="case-icon">🚗</div>
+                        <h3>汽车发动机配件</h3>
+                        <p>使用粉末冶金制造的发动机齿轮、轴承座等零件，重量减轻30%，寿命提高50%</p>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-icon">✈️</div>
+                        <h3>航空航天结构件</h3>
+                        <p>高温合金粉末冶金零件应用于航空发动机，耐高温性能优异，可靠性高</p>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-icon">💾</div>
+                        <h3>电子封装材料</h3>
+                        <p>铜基粉末冶金热沉材料，具有优异的导热性能，应用于电子器件散热</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="20" cy="20" r="8" fill="currentColor"/>
+                            <circle cx="12" cy="14" r="3" fill="currentColor"/>
+                            <circle cx="28" cy="14" r="2" fill="currentColor"/>
+                            <circle cx="14" cy="28" r="2.5" fill="currentColor"/>
+                            <circle cx="26" cy="26" r="2" fill="currentColor"/>
+                        </svg>
+                        <span class="logo-text">PMDome</span>
+                    </div>
+                    <p>粉末冶金知识库 - 致力于传播粉末冶金技术知识</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="pages/compaction.html">压制方式</a></li>
+                        <li><a href="pages/materials.html">相关材料</a></li>
+                        <li><a href="pages/metallography.html">金相分析</a></li>
+                        <li><a href="pages/simulation.html">力学仿真</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>学习资源</h4>
+                    <ul>
+                        <li><a href="pages/resources.html">推荐书籍</a></li>
+                        <li><a href="pages/resources.html">在线课程</a></li>
+                        <li><a href="pages/resources.html">标准规范</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 PMDome. 粉末冶金知识库. 创建用于学习和研究目的.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html" class="mobile-nav-link active">首页</a>
+        <a href="pages/compaction.html" class="mobile-nav-link">压制方式</a>
+        <a href="pages/materials.html" class="mobile-nav-link">相关材料</a>
+        <a href="pages/metallography.html" class="mobile-nav-link">金相分析</a>
+        <a href="pages/simulation.html" class="mobile-nav-link">力学仿真</a>
+        <a href="pages/resources.html" class="mobile-nav-link">学习资料</a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

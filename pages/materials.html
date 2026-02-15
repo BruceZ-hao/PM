@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相关材料 | PMDome 粉末冶金知识库</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="8" fill="currentColor"/>
+                    <circle cx="12" cy="14" r="3" fill="currentColor"/>
+                    <circle cx="28" cy="14" r="2" fill="currentColor"/>
+                    <circle cx="14" cy="28" r="2.5" fill="currentColor"/>
+                    <circle cx="26" cy="26" r="2" fill="currentColor"/>
+                </svg>
+                <span class="logo-text">PMDome</span>
+            </div>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">首页</a>
+                <a href="compaction.html" class="nav-link">压制方式</a>
+                <a href="materials.html" class="nav-link active">相关材料</a>
+                <a href="metallography.html" class="nav-link">金相分析</a>
+                <a href="simulation.html" class="nav-link">力学仿真</a>
+                <a href="resources.html" class="nav-link">学习资料</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-hero" style="background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);">
+            <div class="container">
+                <h1 class="page-title">相关材料</h1>
+                <p class="page-subtitle">粉末冶金用金属粉末及材料体系</p>
+            </div>
+        </section>
+
+        <section class="page-content">
+            <div class="container">
+                <div class="content-nav">
+                    <a href="#overview" class="content-nav-link">概述</a>
+                    <a href="#powder-types" class="content-nav-link">粉末类型</a>
+                    <a href="#iron" class="content-nav-link">铁基材料</a>
+                    <a href="#copper" class="content-nav-link">铜基材料</a>
+                    <a href="#tungsten" class="content-nav-link">钨基材料</a>
+                    <a href="#cemented" class="content-nav-link">硬质合金</a>
+                </div>
+
+                <article id="overview" class="content-section">
+                    <h2>粉末冶金材料概述</h2>
+                    <p>粉末冶金材料是由金属粉末通过压制成型和烧结工艺制成的金属材料。根据基体金属的不同，粉末冶金材料可分为铁基材料、铜基材料、钨基材料、硬质合金及复合材料等。每种材料体系都有其独特的性能特点和 应用领域。</p>
+                    
+                    <div class="info-box">
+                        <h4>材料体系分类</h4>
+                        <ul>
+                            <li><strong>铁基材料</strong>：最广泛应用于结构零件</li>
+                            <li><strong>铜基材料</strong>：具有良好的导电导热性</li>
+                            <li><strong>钨基材料</strong>：高密度、高熔点特性</li>
+                            <li><strong>硬质合金</strong>：高硬度、高耐磨</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="powder-types" class="content-section">
+                    <h2>金属粉末类型</h2>
+                    <p>金属粉末是粉末冶金的基础原料，根据生产方法和化学成分可分为多种类型。</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <div class="method-icon">⚙️</div>
+                            <h3>机械法</h3>
+                            <p>通过机械研磨、球磨等物理方法将金属块体粉碎成粉末。适用于脆性金属和合金。</p>
+                            <div class="method-features">
+                                <span>雾化法</span>
+                                <span>机械粉碎</span>
+                                <span>球磨法</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">🔥</div>
+                            <h3>物理法</h3>
+                            <p>利用物理过程如蒸发-凝结、放电等方法制备粉末。适合高纯度粉末生产。</p>
+                            <div class="method-features">
+                                <span>气雾化</span>
+                                <span>等离子体</span>
+                                <span>真空蒸发</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">🧪</div>
+                            <h3>化学法</h3>
+                            <p>通过化学反应如还原、沉积等方法从化合物中提取金属粉末。</p>
+                            <div class="method-features">
+                                <span>还原法</span>
+                                <span>化学沉积</span>
+                                <span>电解法</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">🧬</div>
+                            <h3>粉末特性</h3>
+                            <p>粉末的关键特性包括粒度分布、颗粒形貌、纯度和比表面积。</p>
+                            <div class="method-features">
+                                <span>粒度</span>
+                                <span>形貌</span>
+                                <span>纯度</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="iron" class="content-section">
+                    <h2>铁基材料</h2>
+                    <p>铁基粉末冶金材料是最常用的一类材料，主要包括纯铁、铁-碳合金、铁-铜-碳合金、不锈钢等。广泛应用于汽车、机械、五金工具等领域。</p>
+                    
+                    <div class="comparison-table">
+                        <h3>常见铁基材料牌号及性能</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>牌号</th>
+                                    <th>主要成分</th>
+                                    <th>密度(g/cm³)</th>
+                                    <th>抗拉强度(MPa)</th>
+                                    <th>应用领域</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>FC-0208</td>
+                                    <td>Fe-2Cu-0.8C</td>
+                                    <td>6.8-7.0</td>
+                                    <td>480</td>
+                                    <td>结构件</td>
+                                </tr>
+                                <tr>
+                                    <td>FC-0205</td>
+                                    <td>Fe-2Cu-0.5C</td>
+                                    <td>6.8-7.1</td>
+                                    <td>380</td>
+                                    <td>结构件</td>
+                                </tr>
+                                <tr>
+                                    <td>SS-316L</td>
+                                    <td>Fe-18Cr-12Ni-2Mo</td>
+                                    <td>≥7.9</td>
+                                    <td>≥520</td>
+                                    <td>耐腐蚀件</td>
+                                </tr>
+                                <tr>
+                                    <td>SS-304L</td>
+                                    <td>Fe-18Cr-8Ni</td>
+                                    <td>≥7.9</td>
+                                    <td>≥480</td>
+                                    <td>耐腐蚀件</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>铁基材料特点</h4>
+                        <ul>
+                            <li>成本低廉，原材料来源广泛</li>
+                            <li>良好的机械加工性能</li>
+                            <li>可通过热处理提高性能</li>
+                            <li>适合大批量生产成本优势明显</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="copper" class="content-section">
+                    <h2>铜基材料</h2>
+                    <p>铜基粉末冶金材料具有优异的导电性、导热性和耐腐蚀性，广泛应用于电工、电子、散热器和装饰件等领域。</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card highlight-card">
+                            <div class="method-icon">⚡</div>
+                            <h3>纯铜材料</h3>
+                            <p>高导电率(≥95% IACS)，用于电接触材料、导电元件。</p>
+                            <div class="method-features">
+                                <span>导电性高</span>
+                                <span>导热性好</span>
+                                <span>延展性好</span>
+                            </div>
+                        </div>
+                        <div class="method-card highlight-card">
+                            <div class="method-icon">🪙</div>
+                            <h3>铜合金</h3>
+                            <p>青铜、黄铜、白铜等，具有优异的耐磨性和耐腐蚀性。</p>
+                            <div class="method-features">
+                                <span>耐磨</span>
+                                <span>耐腐蚀</span>
+                                <span>美观</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-table">
+                        <h3>常见铜基材料性能</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>材料</th>
+                                    <th>导电率(%IACS)</th>
+                                    <th>密度(g/cm³)</th>
+                                    <th>硬度(HRB)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>电解铜</td>
+                                    <td>≥100</td>
+                                    <td>8.9</td>
+                                    <td>40-60</td>
+                                </tr>
+                                <tr>
+                                    <td>青铜(Cu-10Sn)</td>
+                                    <td>15-20</td>
+                                    <td>8.8</td>
+                                    <td>60-80</td>
+                                </tr>
+                                <tr>
+                                    <td>黄铜(Cu-30Zn)</td>
+                                    <td>25-30</td>
+                                    <td>8.5</td>
+                                    <td>55-75</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <article id="tungsten" class="content-section">
+                    <h2>钨基材料</h2>
+                    <p>钨基材料具有高密度、高熔点、高硬度和良好的耐磨性，广泛应用于国防军工、航空航天、医疗等领域。</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <div class="method-icon">🎯</div>
+                            <h3>高密度合金</h3>
+                            <p>钨镍铁、钨镍铜等系列，密度可达18g/cm³以上，用于配重、射线屏蔽。</p>
+                            <div class="method-features">
+                                <span>高密度</span>
+                                <span>高强度</td>
+                                <span>无磁性</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">🔩</div>
+                            <h3>钨合金</h3>
+                            <p>用于穿甲弹芯、平衡块、陀螺仪转子等军工产品。</p>
+                            <div class="method-features">
+                                <span>军工</span>
+                                <span>航天</span>
+                                <span>医疗</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>钨基材料特性</h4>
+                        <ul>
+                            <li>最高熔点(3410°C)金属材料</li>
+                            <li>高密度(18-18.5g/cm³)</li>
+                            <li>优异的耐磨耐腐蚀性能</li>
+                            <li>良好的可加工性和可塑性</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="cemented" class="content-section">
+                    <h2>硬质合金</h2>
+                    <p>硬质合金是由难熔金属碳化物(如碳化钨、碳化钛)与金属粘结剂(通常为钴)通过粉末冶金方法制成的高性能材料。其硬度可达HRA89-94，耐磨性远高于高速钢。</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card highlight-card">
+                            <div class="method-icon">💎</div>
+                            <h3>钨钴类(YG)</h3>
+                            <p>WC-Co系硬质合金，韧性较好，适合加工脆性材料如铸铁、有色金属。</p>
+                            <div class="method-features">
+                                <span>耐磨</span>
+                                <span>耐冲击</span>
+                                <span>通用</span>
+                            </div>
+                        </div>
+                        <div class="method-card highlight-card">
+                            <div class="method-icon">🔷</div>
+                            <h3>钨钛钴类(YT)</h3>
+                            <p>WC-TiC-Co系硬质合金，红硬性好，适合加工钢件。</p>
+                            <div class="method-features">
+                                <span>耐热</span>
+                                <span>抗月牙洼</span>
+                                <span>高速切削</span>
+                            </div>
+                        </div>
+                        <div class="method-card highlight-card">
+                            <div class="method-icon">🌟</div>
+                            <h3>涂层硬质合金</h3>
+                            <p>在硬质合金基体表面沉积TiC、TiN、Al₂O₃等涂层，进一步提高耐磨性。</p>
+                            <div class="method-features">
+                                <span>高寿命</td>
+                                <span>高性能</td>
+                                <span>多功能</span>
+                            </div>
+                        </div>
+                        <div class="method-card highlight-card">
+                            <div class="method-icon">🔶</div>
+                            <h3>超细晶粒硬质合金</h3>
+                            <p>晶粒度小于0.5μm，具有更高的硬度和耐磨性，适合精密加工。</p>
+                            <div class="method-features">
+                                <span>超硬</span>
+                                <span>精密</span>
+                                <span>高效</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-table">
+                        <h3>常见硬质合金牌号及用途</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>牌号</th>
+                                    <th>Co含量(%)</th>
+                                    <th>硬度(HRA)</th>
+                                    <th>抗弯强度(GPa)</th>
+                                    <th>主要用途</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>YG6</td>
+                                    <td>6</td>
+                                    <td>89.5</td>
+                                    <td>1.45</td>
+                                    <td>铸铁加工</td>
+                                </tr>
+                                <tr>
+                                    <td>YG8</td>
+                                    <td>8</td>
+                                    <td>89.0</td>
+                                    <td>1.50</td>
+                                    <td>粗加工</td>
+                                </tr>
+                                <tr>
+                                    <td>YT5</td>
+                                    <td>5</td>
+                                    <td>89.5</td>
+                                    <td>1.40</td>
+                                    <td>钢件加工</td>
+                                </tr>
+                                <tr>
+                                    <td>YT15</td>
+                                    <td>3</td>
+                                    <td>91.0</td>
+                                    <td>1.15</td>
+                                    <td>精加工</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <article class="content-section">
+                    <h2>复合材料</h2>
+                    <p>粉末冶金复合材料通过多种金属或非金属材料的组合，获得单一材料难以达到的综合性能。</p>
+                    <div class="cards-grid">
+                        <div class="info-card">
+                            <h3>金属基复合材料</h3>
+                            <p>以金属为基体，加入陶瓷、纤维等增强相，提高材料的强度和耐磨性。</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>多孔材料</h3>
+                            <p>控制烧结工艺获得多孔结构，用于过滤、减震、润滑等特殊应用。</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>梯度材料</h3>
+                            <p>成分和组织沿某一方向呈梯度变化，适应不同部位的性能要求。</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>纳米材料</h3>
+                            <p>采用纳米级粉末制备，获得优异的力学性能和特殊物理特性。</p>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="page-navigation">
+                    <a href="metallography.html" class="page-nav-btn next">
+                        <span class="nav-label">下一页</span>
+                        <span class="nav-title">金相分析</span>
+                        <span class="nav-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="20" cy="20" r="8" fill="currentColor"/>
+                            <circle cx="12" cy="14" r="3" fill="currentColor"/>
+                            <circle cx="28" cy="14" r="2" fill="currentColor"/>
+                            <circle cx="14" cy="28" r="2.5" fill="currentColor"/>
+                            <circle cx="26" cy="26" r="2" fill="currentColor"/>
+                        </svg>
+                        <span class="logo-text">PMDome</span>
+                    </div>
+                    <p>粉末冶金知识库 - 致力于传播粉末冶金技术知识</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="compaction.html">压制方式</a></li>
+                        <li><a href="materials.html">相关材料</a></li>
+                        <li><a href="metallography.html">金相分析</a></li>
+                        <li><a href="simulation.html">力学仿真</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>学习资源</h4>
+                    <ul>
+                        <li><a href="resources.html">推荐书籍</a></li>
+                        <li><a href="resources.html">在线课程</a></li>
+                        <li><a href="resources.html">标准规范</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 PMDome. 粉末冶金知识库. 创建用于学习和研究目的.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="../index.html" class="mobile-nav-link">首页</a>
+        <a href="compaction.html" class="mobile-nav-link">压制方式</a>
+        <a href="materials.html" class="mobile-nav-link active">相关材料</a>
+        <a href="metallography.html" class="mobile-nav-link">金相分析</a>
+        <a href="simulation.html" class="mobile-nav-link">力学仿真</a>
+        <a href="resources.html" class="mobile-nav-link">学习资料</a>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

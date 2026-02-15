@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>压制方式 | PMDome 粉末冶金知识库</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="8" fill="currentColor"/>
+                    <circle cx="12" cy="14" r="3" fill="currentColor"/>
+                    <circle cx="28" cy="14" r="2" fill="currentColor"/>
+                    <circle cx="14" cy="28" r="2.5" fill="currentColor"/>
+                    <circle cx="26" cy="26" r="2" fill="currentColor"/>
+                </svg>
+                <span class="logo-text">PMDome</span>
+            </div>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">首页</a>
+                <a href="compaction.html" class="nav-link active">压制方式</a>
+                <a href="materials.html" class="nav-link">相关材料</a>
+                <a href="metallography.html" class="nav-link">金相分析</a>
+                <a href="simulation.html" class="nav-link">力学仿真</a>
+                <a href="resources.html" class="nav-link">学习资料</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">压制方式</h1>
+                <p class="page-subtitle">粉末冶金成型工艺详解</p>
+            </div>
+        </section>
+
+        <section class="page-content">
+            <div class="container">
+                <div class="content-nav">
+                    <a href="#overview" class="content-nav-link">概述</a>
+                    <a href="#manual" class="content-nav-link">手动压制</a>
+                    <a href="#hydraulic" class="content-nav-link">液压压制</a>
+                    <a href="#isostatic" class="content-nav-link">等静压</a>
+                    <a href="#forging" class="content-nav-link">粉末锻造</a>
+                </div>
+
+                <article id="overview" class="content-section">
+                    <h2>压制成型概述</h2>
+                    <p>压制是粉末冶金工艺中最关键的成型步骤，将混合好的金属粉末装入模具中，在压力作用下使其形成具有一定形状、尺寸和密度的生坯。压制过程决定了最终产品的几何精度和初始密度，对后续烧结工艺和成品性能有重要影响。</p>
+                    
+                    <div class="info-box">
+                        <h4>压制过程三要素</h4>
+                        <ul>
+                            <li><strong>模具</strong>：决定产品形状和尺寸</li>
+                            <li><strong>压力</strong>：影响生坯密度和强度</li>
+                            <li><strong>粉末</strong>：决定材料的最终性能</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="manual" class="content-section">
+                    <h2>手动压制</h2>
+                    <p>手动压制是最基础的压制方式，通过人工操作手动压片机对粉末进行压制。这种方式适用于实验室研究、小批量生产以及教学演示。</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <div class="method-icon">🔧</div>
+                            <h3>手动压片机</h3>
+                            <p>通过手轮或手柄施加压力，结构简单，操作方便，压力范围通常在1-10吨。</p>
+                            <div class="method-features">
+                                <span>成本低</span>
+                                <span>操作简单</span>
+                                <span>适合小件</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">📊</div>
+                            <h3>适用场景</h3>
+                            <p>适用于科研院所的材料实验、小批量试制、工艺品制作等场景。</p>
+                            <div class="method-features">
+                                <span>实验室</span>
+                                <span>小批量</span>
+                                <span>教学演示</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-steps">
+                        <h3>操作流程</h3>
+                        <ol>
+                            <li><strong>准备模具</strong>：清洁模具表面，涂抹脱模剂</li>
+                            <li><strong>装粉</strong>：将混合好的粉末装入模腔</li>
+                            <li><strong>压制</strong>：通过手轮施加压力，保持一定时间</li>
+                            <li><strong>脱模</strong>：打开模具，取出压制件</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article id="hydraulic" class="content-section">
+                    <h2>手动液压压制</h2>
+                    <p>手动液压压制利用液压系统产生压制力，相比纯机械压制能够提供更大的压力，适合生产中等尺寸和复杂形状的零件。</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <div class="method-icon">⚙️</div>
+                            <h3>液压压制原理</h3>
+                            <p>通过液压泵将机械能转换为液压能，再通过液压缸将压力传递给模具，实现粉末的压制成型。</p>
+                            <div class="method-features">
+                                <span>压力大</span>
+                                <span>稳定性好</span>
+                                <span>可调压力</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">🏭</div>
+                            <h3>应用领域</h3>
+                            <p>广泛应用于汽车零部件、五金工具、机械配件等中等规模的生产。</p>
+                            <div class="method-features">
+                                <span>汽车零件</span>
+                                <span>五金工具</span>
+                                <span>结构件</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-table">
+                        <h3>压制方式对比</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>参数</th>
+                                    <th>手动机械压制</th>
+                                    <th>手动液压压制</th>
+                                    <th>自动压制</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>压力范围</td>
+                                    <td>1-10吨</td>
+                                    <td>10-100吨</td>
+                                    <td>可达500吨</td>
+                                </tr>
+                                <tr>
+                                    <td>生产效率</td>
+                                    <td>低</td>
+                                    <td>中</td>
+                                    <td>高</td>
+                                </tr>
+                                <tr>
+                                    <td>产品精度</td>
+                                    <td>一般</td>
+                                    <td>较好</td>
+                                    <td>高</td>
+                                </tr>
+                                <tr>
+                                    <td>适合批量</td>
+                                    <td>试制/小批</td>
+                                    <td>中小批量</td>
+                                    <td>大批量</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <article id="isostatic" class="content-section">
+                    <h2>等静压压制</h2>
+                    <p>等静压压制利用液体或气体对粉末进行各向均匀的压制，能够消除粉末颗粒间的应力差，获得密度均匀的压制件，特别适合大型、复杂形状零件的制造。</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card highlight-card">
+                            <div class="method-icon">🔵</div>
+                            <h3>冷等静压 (CIP)</h3>
+                            <p>在室温下使用液体介质（通常是水或油）进行等向压制。适用于陶瓷、硬质合金等材料的成型。</p>
+                            <div class="method-features">
+                                <span>各向同性</span>
+                                <span>密度均匀</span>
+                                <span>大尺寸</span>
+                            </div>
+                        </div>
+                        <div class="method-card highlight-card">
+                            <div class="method-icon">🔥</div>
+                            <h3>热等静压 (HIP)</h3>
+                            <p>在高温高压同时作用下进行压制和烧结，能够获得接近理论密度的制品。广泛应用于航空航天领域。</p>
+                            <div class="method-features">
+                                <span>高温高压</span>
+                                <span>致密度高</td>
+                                <span>高性能</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>等静压优势</h4>
+                        <ul>
+                            <li>压制密度均匀，无压制方向性差异</li>
+                            <li>可制备大尺寸和复杂形状零件</li>
+                            <li>模具成本低，无需复杂压机</li>
+                            <li>生坯强度高，便于后续加工</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="forging" class="content-section">
+                    <h2>粉末锻造</h2>
+                    <p>粉末锻造是将粉末压制成预制坯后，再进行锻造的一种复合成型工艺。这种方法结合了粉末冶金和锻造工艺的优点，能够获得高密度、高性能的零件。</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <div class="method-icon">🔨</div>
+                            <h3>工艺流程</h3>
+                            <p>粉末压制→预制坯→锻造→热处理，通过锻造使材料进一步致密化，提高力学性能。</p>
+                            <div class="method-features">
+                                <span>高密度</span>
+                                <span>高性能</span>
+                                <span>复杂形状</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">✈️</div>
+                            <h3>应用领域</h3>
+                            <p>主要用于航空航天、汽车工业中高强度结构件的制造，如连杆、齿轮、涡轮盘等。</p>
+                            <div class="method-features">
+                                <span>航空航天</span>
+                                <span>汽车高强度件</span>
+                                <span>精密零件</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-table">
+                        <h3>粉末锻造 vs 传统锻造</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>对比项目</th>
+                                    <th>粉末锻造</th>
+                                    <th>传统锻造</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>材料利用率</td>
+                                    <td>>95%</td>
+                                    <td>60-80%</td>
+                                </tr>
+                                <tr>
+                                    <td>后加工</td>
+                                    <td>少</td>
+                                    <td>多</td>
+                                </tr>
+                                <tr>
+                                    <td>晶粒均匀性</td>
+                                    <td>均匀细小</td>
+                                    <td>不均匀</td>
+                                </tr>
+                                <tr>
+                                    <td>成本</td>
+                                    <td>中等</td>
+                                    <td>较高</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <article class="content-section">
+                    <h2>其他压制方式</h2>
+                    <div class="cards-grid">
+                        <div class="info-card">
+                            <h3>滚动压制</h3>
+                            <p>通过两个反向旋转的轧辊对粉末进行压制，适合生产板状或带状产品。</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>注射成型 (MIM)</h3>
+                            <p>将粉末与粘结剂混合后注射成型，适合复杂小型零件的精密制造。</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>冲击压制</h3>
+                            <p>利用高速冲击波进行瞬间压制，可获得高密度制品。</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>挤压成型</h3>
+                            <p>将粉末与粘结剂混合后通过模具挤出，适合长条形产品的制造。</p>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="page-navigation">
+                    <a href="materials.html" class="page-nav-btn next">
+                        <span class="nav-label">下一页</span>
+                        <span class="nav-title">相关材料</span>
+                        <span class="nav-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="20" cy="20" r="8" fill="currentColor"/>
+                            <circle cx="12" cy="14" r="3" fill="currentColor"/>
+                            <circle cx="28" cy="14" r="2" fill="currentColor"/>
+                            <circle cx="14" cy="28" r="2.5" fill="currentColor"/>
+                            <circle cx="26" cy="26" r="2" fill="currentColor"/>
+                        </svg>
+                        <span class="logo-text">PMDome</span>
+                    </div>
+                    <p>粉末冶金知识库 - 致力于传播粉末冶金技术知识</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="compaction.html">压制方式</a></li>
+                        <li><a href="materials.html">相关材料</a></li>
+                        <li><a href="metallography.html">金相分析</a></li>
+                        <li><a href="simulation.html">力学仿真</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>学习资源</h4>
+                    <ul>
+                        <li><a href="resources.html">推荐书籍</a></li>
+                        <li><a href="resources.html">在线课程</a></li>
+                        <li><a href="resources.html">标准规范</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 PMDome. 粉末冶金知识库. 创建用于学习和研究目的.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="../index.html" class="mobile-nav-link">首页</a>
+        <a href="compaction.html" class="mobile-nav-link active">压制方式</a>
+        <a href="materials.html" class="mobile-nav-link">相关材料</a>
+        <a href="metallography.html" class="mobile-nav-link">金相分析</a>
+        <a href="simulation.html" class="mobile-nav-link">力学仿真</a>
+        <a href="resources.html" class="mobile-nav-link">学习资料</a>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

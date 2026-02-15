@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习资料 | PMDome 粉末冶金知识库</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="8" fill="currentColor"/>
+                    <circle cx="12" cy="14" r="3" fill="currentColor"/>
+                    <circle cx="28" cy="14" r="2" fill="currentColor"/>
+                    <circle cx="14" cy="28" r="2.5" fill="currentColor"/>
+                    <circle cx="26" cy="26" r="2" fill="currentColor"/>
+                </svg>
+                <span class="logo-text">PMDome</span>
+            </div>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">首页</a>
+                <a href="compaction.html" class="nav-link">压制方式</a>
+                <a href="materials.html" class="nav-link">相关材料</a>
+                <a href="metallography.html" class="nav-link">金相分析</a>
+                <a href="simulation.html" class="nav-link">力学仿真</a>
+                <a href="resources.html" class="nav-link active">学习资料</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-hero" style="background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);">
+            <div class="container">
+                <h1 class="page-title">学习资料</h1>
+                <p class="page-subtitle">粉末冶金经典教材、课程与行业标准</p>
+            </div>
+        </section>
+
+        <section class="page-content">
+            <div class="container">
+                <div class="content-nav">
+                    <a href="#books" class="content-nav-link">推荐书籍</a>
+                    <a href="#courses" class="content-nav-link">在线课程</a>
+                    <a href="#standards" class="content-nav-link">标准规范</a>
+                    <a href="#links" class="content-nav-link">行业资源</a>
+                </div>
+
+                <article id="books" class="content-section">
+                    <h2>推荐书籍</h2>
+                    <p>以下是粉末冶金领域的经典教材和专业书籍，涵盖理论、工艺和应用各个方面。</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <div class="method-icon">📚</div>
+                            <h3>《粉末冶金原理》</h3>
+                            <p>系统介绍粉末冶金基本原理，包括粉末生产、压制、烧结等核心工艺。</p>
+                            <div class="method-features">
+                                <span>理论基础</span>
+                                <span>经典教材</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">📚</div>
+                            <h3>《粉末冶金技术手册》</h3>
+                            <p>全面介绍粉末冶金生产技术及设备，是工程技术人员的实用参考书。</p>
+                            <div class="method-features">
+                                <span>技术手册</span>
+                                <span>实用</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">📚</div>
+                            <h3>《硬质合金》</h3>
+                            <p>专门介绍硬质合金材料、工艺及应用，是相关领域工程师的必备参考。</p>
+                            <div class="method-features">
+                                <span>硬质合金</span>
+                                <span>专业</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">📚</div>
+                            <h3>《粉末冶金成形技术》</h3>
+                            <p>详细介绍各种粉末冶金成形工艺，包括等静压、注射成形等先进技术。</p>
+                            <div class="method-features">
+                                <span>成形工艺</span>
+                                <span>先进</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">📚</div>
+                            <h3>《粉末冶金金相图谱》</h3>
+                            <p>收集整理各类粉末冶金材料的典型金相照片，是金相分析的实用工具书。</p>
+                            <div class="method-features">
+                                <span>金相图谱</span>
+                                <span>图集</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">📚</div>
+                            <h3>《粉末冶金有限元模拟》</h3>
+                            <p>介绍粉末冶金工艺数值模拟方法及软件应用，适合研究人员参考。</p>
+                            <div class="method-features">
+                                <span>数值模拟</span>
+                                <span>FEA</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="courses" class="content-section">
+                    <h2>在线课程</h2>
+                    <p>通过网络平台学习粉末冶金知识，以下是一些优质的在线课程资源。</p>
+                    
+                    <div class="comparison-table">
+                        <h3>国内在线课程</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>课程名称</th>
+                                    <th>平台</th>
+                                    <th>内容</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>材料成形技术</td>
+                                    <td>中国大学MOOC</td>
+                                    <td>粉末冶金基础工艺</td>
+                                </tr>
+                                <tr>
+                                    <td>粉末冶金技术</td>
+                                    <td>学堂在线</td>
+                                    <td>理论与实践结合</td>
+                                </tr>
+                                <tr>
+                                    <td>材料科学基础</td>
+                                    <td>智慧树</td>
+                                    <td>材料科学理论</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>学习方法建议</h4>
+                        <ul>
+                            <li><strong>系统学习</strong>：从基础理论开始，建立完整知识体系</li>
+                            <li><strong>实践结合</strong>：将理论与实验或生产实践相结合</li>
+                            <li><strong>关注前沿</li>：阅读最新论文，了解行业发展动态</li>
+                            <li><strong>交流讨论</strong>：加入专业社群，与同行交流学习</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="standards" class="content-section">
+                    <h2>标准规范</h2>
+                    <p>粉末冶金行业遵循一系列国家标准和行业标准，以下是常用的标准汇总。</p>
+                    
+                    <div class="method-grid">
+                        <div class="method-card">
+                            <div class="method-icon">📋</div>
+                            <h3>GB/T 国家标准</h3>
+                            <p>中国国家标准，包括粉末冶金产品牌号、性能测试方法等。</p>
+                            <div class="method-features">
+                                <span>GB/T</span>
+                                <span>国家标准</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">📋</div>
+                            <h3>ISO 国际标准</h3>
+                            <p>国际标准化组织制定的粉末冶金国际标准，具有全球通用性。</p>
+                            <div class="method-features">
+                                <span>ISO</span>
+                                <span>国际</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">📋</div>
+                            <h3>ASTM 美国标准</h3>
+                            <p>美国材料与试验协会标准，在美洲地区广泛使用。</p>
+                            <div class="method-features">
+                                <span>ASTM</span>
+                                <span>美国</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon">📋</div>
+                            <h3>粉末冶金学会标准</h3>
+                            <td>行业组织制定的技术规范，代表行业先进技术水平。</p>
+                            <div class="method-features">
+                                <span>PMI</span>
+                                <span>行业</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-table">
+                        <h3>常用粉末冶金标准</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>标准号</th>
+                                    <th>名称</th>
+                                    <th>内容</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GB/T 14588</td>
+                                    <td>粉末冶金材料分类</td>
+                                    <td>材料分类与牌号</td>
+                                </tr>
+                                <tr>
+                                    <td>GB/T 5156</td>
+                                    <td>金属粉末松装密度测定</td>
+                                    <td>测试方法</td>
+                                </tr>
+                                <tr>
+                                    <td>GB/T 5158</td>
+                                    <td>金属粉末压缩性能测定</td>
+                                    <td>测试方法</td>
+                                </tr>
+                                <tr>
+                                    <td>ISO 5755</td>
+                                    <td>粉末冶金材料规范</td>
+                                    <td>材料性能要求</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <article id="links" class="content-section">
+                    <h2>行业资源</h2>
+                    <p>以下是粉末冶金领域的专业机构、期刊和行业网站。</p>
+                    
+                    <div class="cards-grid">
+                        <div class="info-card">
+                            <h3>研究机构</h3>
+                            <p>粉末冶金研究总院、各高校材料学院、研究所等，从事粉末冶金技术研发。</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>学术期刊</h3>
+                            <p>《粉末冶金技术》、《稀有金属与硬质合金》、International Journal of Powder Metallurgy等。</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>行业组织</h3>
+                            <p>中国粉末冶金学会、各省市粉末冶金协会、粉末冶金技术创新战略联盟等。</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>行业展会</h3>
+中国国际粉末冶金及硬质合金                            <p>展览会、上海国际工业陶瓷展览会等行业展会。</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>行业动态关注</h4>
+                        <ul>
+                            <li>关注粉末冶金学术会议，了解最新研究进展</li>
+                            <li>参加行业展会，与企业交流技术</li>
+                            <li>订阅专业期刊，跟踪技术发展</li>
+                            <li>加入行业协会，拓展专业人脉</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <div class="page-navigation">
+                    <a href="../index.html" class="page-nav-btn next">
+                        <span class="nav-label">返回首页</span>
+                        <span class="nav-title">回到首页</span>
+                        <span class="nav-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="20" cy="20" r="8" fill="currentColor"/>
+                            <circle cx="12" cy="14" r="3" fill="currentColor"/>
+                            <circle cx="28" cy="14" r="2" fill="currentColor"/>
+                            <circle cx="14" cy="28" r="2.5" fill="currentColor"/>
+                            <circle cx="26" cy="26" r="2" fill="currentColor"/>
+                        </svg>
+                        <span class="logo-text">PMDome</span>
+                    </div>
+                    <p>粉末冶金知识库 - 致力于传播粉末冶金技术知识</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="compaction.html">压制方式</a></li>
+                        <li><a href="materials.html">相关材料</a></li>
+                        <li><a href="metallography.html">金相分析</a></li>
+                        <li><a href="simulation.html">力学仿真</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>学习资源</h4>
+                    <ul>
+                        <li><a href="resources.html">推荐书籍</a></li>
+                        <li><a href="resources.html">在线课程</a></li>
+                        <li><a href="resources.html">标准规范</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 PMDome. 粉末冶金知识库. 创建用于学习和研究目的.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="../index.html" class="mobile-nav-link">首页</a>
+        <a href="compaction.html" class="mobile-nav-link">压制方式</a>
+        <a href="materials.html" class="mobile-nav-link">相关材料</a>
+        <a href="metallography.html" class="mobile-nav-link">金相分析</a>
+        <a href="simulation.html" class="mobile-nav-link">力学仿真</a>
+        <a href="resources.html" class="mobile-nav-link active">学习资料</a>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
